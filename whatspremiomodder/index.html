@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premio Modder WIKI</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #222;
+        }
+
+        /* Top banner */
+        .top-banner {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .top-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: teal;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Timeline button */
+        .timeline-button {
+            background-color: #222;
+            color: white;
+            border: 2px solid teal;
+            padding: 13px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .timeline-button:hover {
+            background-color: teal;
+            color: white;
+        }
+
+        /* Popup background */
+        .timeline-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.75);
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .timeline-modal.open {
+            display: flex;
+        }
+
+        /* Popup window */
+        .timeline-content {
+            background-color: #222;
+            color: white;
+            width: 100%;
+            max-width: 600px;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 25px;
+            border-radius: 10px;
+            position: relative;
+            box-sizing: border-box;
+            text-align: left;
+            border-top: 4px solid teal;
+        }
+
+        .timeline-content h2 {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        /* Close button */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .close-button:hover {
+            color: teal;
+        }
+
+        /* Vertical timeline */
+        .timeline {
+            position: relative;
+            margin: 25px 0 10px 10px;
+            padding-left: 25px;
+            border-left: 3px solid teal;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -34px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background-color: teal;
+            border: 3px solid #222;
+            border-radius: 50%;
+        }
+
+        .timeline-item h3 {
+            margin: 0 0 8px;
+            color: #40e0d0;
+        }
+
+        .timeline-item p {
+            margin: 0;
+            line-height: 1.6;
+            color: #eee;
+        }
+
+        @media (max-width: 600px) {
+            .top-banner {
+                height: 160px;
+            }
+
+            .timeline-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="top-banner">
+            <img
+                src="https://i.imghippo.com/files/KHIr8195YV.png"
+                alt="Premio Modder WIKI banner"
+            >
+        </div>
+
+        <nav>
+            <a href="/whatspremiomodder/foundationlss.html">Perspective</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Perspective Endeavours</h1>
+        <h2>Welcome to the Premio Modder WIKI.</h2>
+        <img src="https://i.imghippo.com/files/NlEb3453tjk.png" alt="SPORT (8)" />
+        <h3><em>Born Against Ordinary</em></h3>
+
+        <p>Explore the future goals and ambitions of Premio Modder.</p>
+
+        <button
+            class="timeline-button"
+            id="openTimeline"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="timelineModal"
+        >
+            View Timeline
+        </button>
+    </main>
+
+    <!-- Timeline popup -->
+    <div
+        class="timeline-modal"
+        id="timelineModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="timelineTitle"
+        aria-hidden="true"
+    >
+        <div class="timeline-content">
+            <button
+                class="close-button"
+                id="closeTimeline"
+                type="button"
+                aria-label="Close timeline"
+            >&times;</button>
+
+            <h2 id="timelineTitle">Premio Modder Timeline</h2>
+            <p>Our ambitions and future milestones.</p>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <h3>01 — Studying Trends</h3>
+                    <p>
+                        Introduce a new collection suitable for media and film recording..
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>02 — Affiliate Program</h3>
+                    <p>
+                        Start an affiliate program to build
+                        partnerships and expand our reach. 'PremioModder' ambassadors would include members from anywhere allowed!
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>03 — Studios </h3>
+                    <p>
+                        Work toward constructing more than
+                        10 physical stores worldwide.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("timelineModal");
+        const openButton = document.getElementById("openTimeline");
+        const closeButton = document.getElementById("closeTimeline");
+
+        function openTimeline() {
+            modal.classList.add("open");
+            modal.setAttribute("aria-hidden", "false");
+            closeButton.focus();
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeTimeline() {
+            modal.classList.remove("open");
+            modal.setAttribute("aria-hidden", "true");
+            document.body.style.overflow = "";
+            openButton.focus();
+        }
+
+        openButton.addEventListener("click", openTimeline);
+        closeButton.addEventListener("click", closeTimeline);
+
+        // Close when clicking outside the popup
+        modal.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                closeTimeline();
+            }
+        });
+
+        // Close with Escape
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape" && modal.classList.contains("open")) {
+                closeTimeline();
+            }
+        });
+    </script>
+
+</body>
+</html>
