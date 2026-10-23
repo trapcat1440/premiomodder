@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premio Modder WIKI</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #222;
+        }
+
+        /* Top banner image */
+        .top-banner {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .top-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #222;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #66ccff;
+        }
+
+        /* Page content */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Dropdown styling */
+        .lsscollection {
+            margin: 15px auto;
+            max-width: 700px;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+            border-radius: 6px;
+            text-align: left;
+        }
+
+        .lsscollection summary {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        .lsscollection summary:hover {
+            color: teal;
+        }
+
+        /* Image inside dropdown */
+        .collection-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 4px;
+        }
+
+        /* Social and store links */
+        .profile-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 10px 0;
+        }
+
+        .profile-links a {
+            display: inline-block;
+            background-color: #333;
+            color: #66ccff;
+            padding: 12px 18px;
+            border: 1px solid #66ccff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .profile-links a:visited {
+            color: #c9a0ff;
+        }
+
+        
+    .profile-links a:hover {
+    background-color: teal;
+    color: white;
+    border-color: teal;
+}
+
+
+        .profile-links a:focus-visible {
+            outline: 3px solid white;
+            outline-offset: 3px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .top-banner {
+                height: 160px;
+            }
+
+            nav {
+                gap: 18px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .profile-links {
+                flex-direction: column;
+            }
+
+            .profile-links a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="top-banner">
+            <img
+                src="https://i.imghippo.com/files/KHIr8195YV.png"
+                alt="Premio Modder WIKI banner"
+            >
+        </div>
+
+        <nav>
+            
+            <a href="gallery.html">Profiles</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h1>Profiles</h1>
+        <h2>Welcome to the Premio Modder WIKI.</h2>
+        <h3><em>Envying Modern Luxury</em></h3>
+
+        <details class="lsscollection">
+            <summary>Communications &amp; Entities</summary>
+
+            <img src="https://i.imghippo.com/files/f8718sQ.jpeg" width="500">
+
+            <div class="profile-links">
+                <a href="https://www.linkedin.com/in/apparellss/"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="https://www.instagram.com/collection_lss/"
+                   target="_blank" rel="noopener noreferrer">
+                    Instagram
+                </a>
+
+                <a href="https://discord.gg/trHMKy3f3"
+                   target="_blank" rel="noopener noreferrer">
+                    Discord
+                </a>
+
+                <a href="https://nftlss.co/"
+                   target="_blank" rel="noopener noreferrer">
+                    Store
+                </a>
+            </div>
+        </details>
+    </main>
+
+</body>
+</html>
